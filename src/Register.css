@@ -1,0 +1,156 @@
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  font-family: Arial, sans-serif;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 36px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.register-icon {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  border-radius: 18px;
+  background: #eef2ff;
+  font-size: 30px;
+}
+
+.register-card h1 {
+  margin: 0;
+  color: #172554;
+  text-align: center;
+  font-size: 28px;
+}
+
+.register-subtitle {
+  margin: 10px 0 24px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-card form label {
+  display: block;
+  margin: 16px 0 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-card input {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.register-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px #e0e7ff;
+}
+
+.register-password-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.register-password-wrapper input {
+  flex: 1;
+}
+
+.register-show-password {
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.register-hint {
+  margin: 8px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.register-message {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.register-message.success {
+  color: #15803d;
+}
+
+.register-message.error {
+  color: #dc2626;
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+}
+
+.register-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.register-footer {
+  margin: 22px 0 0;
+  color: #94a3b8;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 26px 20px;
+  }
+}
+
+
+.auth-link {
+  border: none;
+  background: transparent;
+  color: #4f46e5;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
